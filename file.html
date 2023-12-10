@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Collegamento a bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <!-- Collegamento a JavaScript -->
+  <script defer src="file.js"></script>
+  <body>
+    <div class="container">
+      <!-- Form per inserire dati -->
+      <form action="">
+        <div class="row">
+          <div class="col-sm-6">
+            <!-- Campo ID -->
+            <label for="id" class="form-label">Id:</label>
+            <input type="text" id="id" name="id" class="form-control" />
+          </div>
+          <div class="col-sm-6">
+            <!-- Campo Nome -->
+            <label for="firstName" class="form-label">Nome:</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              class="form-control"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+            <!-- Campo Cognome -->
+            <label for="lastName" class="form-label">Cognome:</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              class="form-control"
+            />
+          </div>
+          <div class="col-sm-6">
+            <!-- Campo Voto -->
+            <label for="vote" class="form-label">Voto:</label>
+            <input type="text" id="vote" name="vote" class="form-control" />
+          </div>
+        </div>
+        <!-- Campo Commento -->
+        <label for="comment" class="form-label">Commento:</label>
+        <input type="text" id="comment" name="comment" class="form-control" />
+        <!-- Campo Data -->
+        <label for="date" class="form-label">Data:</label>
+        <input type="date" id="date" name="date" class="form-control" />
+        <br />
+        <div class="text-center">
+          <!-- Pulsante di invio -->
+          <button class="btn btn-primary">Invia</button>
+        </div>
+      </form>
+
+      <div class="col">
+        <!-- Tabella per visualizzare i dati -->
+        <table class="table" id="table">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Nome</th>
+              <th scope="col">Cognome</th>
+              <th scope="col">Voto</th>
+              <th scope="col">Commento</th>
+              <th scope="col">Data</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
